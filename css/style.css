@@ -1,0 +1,14 @@
+
+#suerte {
+    position: absolute;
+    top: 49%;
+    left: 39%;
+    /* transform: translate(-50%, -50%); */
+        
+}
+
+/* Estilos formulario*/
+.error {
+    color: rgb(177, 0, 0);
+    padding: 2%;
+}

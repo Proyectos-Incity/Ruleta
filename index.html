@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto ruleta</title>
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container is-max-desktop">
+        <figure class="image">
+            <img src="https://images.milledcdn.com/2017-08-15/Wmu_4KPKx6QiENgV/C21mTK6Kr_yV.gif">
+        </figure>
+
+        <div>
+            <button id="suerte" class="button is-large is-danger is-rounded">¡Suerte!</button>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white py-5 px-5">
+            <h3 class="title mb-6">Registrate para probar suerte</h3>
+            <form  action="https://formspree.io/f/xwkjvjyy" method="POST" name="formulario"  id="formulario">
+                <div class="field">
+                    <label class="label">Nombre</label>
+                    <div class="control">
+                        <input id="nombre" name="nombre" type="text" class="input nombre" placeholder="Nombre">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Correo</label>
+                    <div class="control">
+                        <input id="email" name="email" type="email" class="input email" placeholder="vos@mail.com">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">DNI</label>
+                    <div class="control">
+                        <input id="dni" name="dni" type="tel" class="input dni" placeholder="12345678">
+                    </div>
+                </div>
+                <!-- <div class="field">
+                    <label class="checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        Acepto los <a href="#">términos y condiciones</a>
+                    </label>
+                </div> -->
+        </div>
+        <div class="mt-6 has-text-centered">
+            <button id="submit" type="submit" class="button is-warning has-text-weight-medium registro">¡Suerte!</button>
+        </div>
+        </form>
+    </div>
+    </div>
+
+
+
+    <script src="js/modal.js"></script>
+</body>
+
+
+
+</html>
